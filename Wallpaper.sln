@@ -5,9 +5,7 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wallpaper", "Wallpaper\Wallpaper.csproj", "{773EA6DC-3A60-4075-B1CB-18D57F951097}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishyuAnimation", "..\..\WorkSpace\code\C#\FishyuAnimation\FishyuAnimation\FishyuAnimation.csproj", "{13D92134-FCAE-4B91-85BA-4E7766F842C6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishYuAnimationWinFormDemo", "..\..\WorkSpace\code\C#\FishyuAnimation\FishYuAnimationWinFormDemo\FishYuAnimationWinFormDemo.csproj", "{62514B7A-F2D7-4526-BAEE-E0992E8BB157}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishyuAnimation", "..\FishYu\FishyuAnimation\FishyuAnimation\FishyuAnimation.csproj", "{13D92134-FCAE-4B91-85BA-4E7766F842C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +21,11 @@ Global
 		{13D92134-FCAE-4B91-85BA-4E7766F842C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13D92134-FCAE-4B91-85BA-4E7766F842C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13D92134-FCAE-4B91-85BA-4E7766F842C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{62514B7A-F2D7-4526-BAEE-E0992E8BB157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62514B7A-F2D7-4526-BAEE-E0992E8BB157}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62514B7A-F2D7-4526-BAEE-E0992E8BB157}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62514B7A-F2D7-4526-BAEE-E0992E8BB157}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9287860A-AD7A-4BAB-A2B4-3ED41D56D624}
 	EndGlobalSection
 EndGlobal

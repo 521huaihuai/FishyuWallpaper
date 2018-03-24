@@ -34,9 +34,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -127,12 +124,6 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\WorkSpace\code\C#\FishyuAnimation\FishyuAnimation\FishyuAnimation.csproj">
-      <Project>{13d92134-fcae-4b91-85ba-4e7766f842c6}</Project>
-      <Name>FishyuAnimation</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Resouce\more_unfold.png" />
     <Content Include="Resources\apparel.png" />
     <Content Include="Resources\background.bmp">
@@ -141,6 +132,12 @@
     <Content Include="Resources\more_unfold %281%29.png" />
     <Content Include="Resources\set.png" />
     <None Include="Resources\more_unfold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FishYu\FishyuAnimation\FishyuAnimation\FishyuAnimation.csproj">
+      <Project>{13d92134-fcae-4b91-85ba-4e7766f842c6}</Project>
+      <Name>FishyuAnimation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
