@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Wallpaper</RootNamespace>
     <AssemblyName>Wallpaper</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -34,9 +34,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -127,20 +124,23 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\WorkSpace\code\C#\FishyuAnimation\FishyuAnimation\FishyuAnimation.csproj">
-      <Project>{13d92134-fcae-4b91-85ba-4e7766f842c6}</Project>
-      <Name>FishyuAnimation</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Resouce\more_unfold.png" />
     <Content Include="Resources\apparel.png" />
     <Content Include="Resources\background.bmp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\more_unfold %281%29.png" />
+    <Content Include="Resources\play.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\set.png" />
     <None Include="Resources\more_unfold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FishYu\FishyuAnimation\FishyuAnimation\FishyuAnimation.csproj">
+      <Project>{13d92134-fcae-4b91-85ba-4e7766f842c6}</Project>
+      <Name>FishyuAnimation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
